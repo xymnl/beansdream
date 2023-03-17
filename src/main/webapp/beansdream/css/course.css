@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* ===== 공통 영역 ===== */
+.btn {position:relative; cursor:pointer;} /* ===== 버튼 포지션 ===== */
+.mc4, .mc4 .cs-container, .cs-leftbx, .cs-mnbg, .cs-video, .cs-mnbx, .cs-mntitle, 
+.cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3, .cs-sbtxt, 
+.mc4, .tb-sm-bg, .tb-sm-bg2, .tb-sm-bg3, .btn::before {position:absolute;}
+.cs-hdtitle, .cs-hdtitle2, .cs-mntitle, .sbtxt1, .cs-tb-smtitle, .cs-tb-smtitle2 {font-size:54px;}
+.cs-sbtxt, .cs-mntxt2 {font-size:15px;}
+/* ===== fhd/hd 왼쪽 박스 ===== */
+.cs-leftbx {left:0;top:0;width:50%; overflow:hidden; cursor:pointer;}
+.cs-hdtitle, .cs-hdtitle2, .cs-mntitle, .sbtxt1, .cs-hdtitle, .cs-hdtitle2 {color:#3b1f16;}
+.cs-mntxt, .cs a {color:#7f7370;}
+/* ===== 제목 애니메이션 효과 ===== */
+.cs-title {
+    text-shadow:0 0 80px rgba(255,255,255,.5);
+    -webkit-text-fill-color:transparent;
+    animation:aitf 80s linear infinite;
+    transform:translate3d(0,0,0);
+    backface-visibility:hidden;
+}
+.cs-sbtxt, .cs-sbtxt, .cs-mnbg, .tb-sm-bg {transition:all 0.4s ease-in;}
+.mc4 {
+    left:0; top:0; width:100%; height:100vh;
+    background:url(../imgs/cs-back.jpg) no-repeat center center;
+    background-size:cover;
+}
+.cs-mnbg, .tb-sm-bg {left:0; top:0; width:100%;}
+/* ===== 안전영역 ===== */
+.mc4 .cs-container{left:50%; top:50%; transform:translate(-50%, -50%);}
+/* ===== 작은 사진 ===== */
+.cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3 {
+    transition:all 0.4s ease-in;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.cs-hdtitle, .cs a {text-align:center;}
+.cs > li {background:#F2F2F2; opacity:0.9;}
+.mnbtn, .btn1::before, .cs #tabsBtn.on .btncolor2 {background:#3b1f16;}
+.btncolor, .cs #tabsBtn.on .btncolor2, .cs #tabsBtn2.on, 
+.btn2::before, .cs #tabsBtn3.on, .btn3::before, 
+.cs-tb-smtitle, .cs-tb-smtitle2, .cs-mntxt2 {color:#F2F2F2;}
+.btncolor2 {display:block; color:#7f7370; width:100%; height:100%;}
+.cs #tabsBtn2.on, .btn2::before {background:#415913;}
+.cs #tabsBtn3.on, .btn3::before {background:#ff8000;}
+    /* ===== 버튼 덮는 색깔 박스  ===== */
+.btn1::before, .btn2::before, .btn3::before {z-index:-9;}
+.cs a {cursor:pointer; width:100%; height:100%; line-height:60px;}
+.btn {overflow:hidden;} 
+.btn::before {content:""; left:-200px; width:120%; height:120%;}
+.btn:hover::before {left:-10%; top:-10%; animation:btnAction 0.6s 1;}
+/* ===== 제목 애니메이션 효과 ===== */
+@keyframes aitf {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+    /* ===== FHD 영역 ===== */
+
+@media screen and (min-width:1400px) {
+    /* ===== 안전 영역 ===== */
+    .mc4 .cs-container{width:1300px; height:76%;}   
+    /*===== 왼쪽 이미지 =====*/
+    .cs-leftbx, .cs-mnbg, .cs-mnbx {height:750px;}
+    .cs-mnbg {
+        background:url(../imgs/fhd4-main-bg1.jpg) no-repeat center center;
+        background-size:cover; 
+    }
+    .cs-mnbg2 {
+        background:url(../imgs/fhd4-main-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-mnbg3 {
+        background:url(../imgs/fhd4-main-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /*===== 오른쪽 박스 =====*/
+    .cs-mnbx {left:50%; top:0; width:50%;}
+    /* ===== 타이틀 ===== */
+    .cs-mntitle, .cs-mntxt, .cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3, .cs {left:100px;}
+    .cs-mntitle {top:140px;}
+    .cs-hdtitle, .cs-hdtitle2 {display:none;}
+    /* ===== 제목 애니메이션 효과 ===== */
+    .cs-title {
+        background:url(../imgs/animated-text-fill.png) repeat-y;
+        -webkit-background-clip:text;
+        background-clip:text;
+    }
+    /* ===== 메인 텍스트 ===== */
+    .cs-mntxt {position:absolute; top:195px;}
+    /* ===== 서브 이미지 ===== */
+    .cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3 {top:325px; width:550px; height:100px;}
+    .cs-sbbg, .cs-sbbg-bg1 {
+        background:url(../imgs/fhd4-sub-bg1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg2 {
+        background:url(../imgs/fhd4-sub-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg3 {
+        background:url(../imgs/fhd4-sub-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /* ===== 텍스트 ===== */
+    .cs-tb-smtitle, .cs-tb-smtitle2, .cs-mntxt2 {display:none;}
+    .cs-sbtxt {left:-200px; top:435px; opacity:0;}
+    .sbtxt1 {opacity:1; left:100px;}
+    /* ===== 버튼 ===== */
+    .cs {position:absolute; bottom:115px;}
+    .cs li {
+        width:150px; height:60px;
+        border-left:1px solid #7f7370;
+        border-top:1px solid #7f7370;
+        border-bottom:1px solid #7f7370;
+    }
+    .cs li:last-child {border-right:1px solid #7f7370}
+    /* ===== 버튼 호버 ===== */
+    .cs li a:first-child:hover {color:#F2F2F2;}
+    .btncolor2:hover {color:#F2F2F2;}
+    /* ===== 버튼 효과 ===== */
+    @keyframes btnAction {
+        0% {left:-180px;}
+        85% {left:40%;}
+        100% {left:-10%;}
+    }
+}
+
+    /* ===== HD 영역 ===== */
+
+@media screen and (min-width:1050px) and (max-width:1399px) {
+    .mc4 .cs-container, .cs-leftbx, .cs-mnbg, .cs-mnbx {height:580px;}
+    .mc4 .cs-container{width:900px;} 
+    .cs-mnbg {
+        left:0; top:0; width:100%;
+        background:url(../imgs/hd4-main-bg1.jpg) no-repeat center center;
+    }
+    .cs-mnbg2 {
+        background:url(../imgs/hd4-main-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-mnbg3 {
+        background:url(../imgs/hd4-main-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /* ===== 오른쪽 박스 ===== */
+    .cs-hdtitle, .cs-hdtitle2, .cs-mntxt, .cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3, .cs {left:25px;}
+    .cs-mnbx {left:50%; top:0; width:50%;}
+    .cs-tb-smtitle, .cs-tb-smtitle2, .cs-mntxt2 {display:none;}
+    /* ===== fhd 제목을 none/hd 제목을 block ===== */
+    .cs-mntitle {display:none;}
+    .cs-hdtitle, .cs-hdtitle2 {display:block; position:absolute; top:90px;}
+    .cs-hdtitle {top:90px;}
+    .cs-hdtitle2 {top:140px;}
+    /* ===== 제목 애니메이션 효과 ===== */
+    .cs-title {
+        background:url(../imgs/animated-text-fill.png) repeat-y;
+        -webkit-background-clip:text;
+        background-clip:text;
+    }
+    /* ===== 메인 텍스트 ===== */
+    .cs-mntxt {position:absolute; top:195px;}
+    /* ===== 서브 이미지 ===== */
+    .cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3 {
+        top:260px; width:425px; height:85px;
+        box-shadow:0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+    .cs-sbbg, .cs-sbbg-bg1 {
+        background:url(../imgs/hd4-sub-bg1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg2 {
+        background:url(../imgs/hd4-sub-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg3 {
+        background:url(../imgs/hd4-sub-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /* ===== 텍스트 ===== */
+    .cs-sbtxt {opacity:0; left:-200px; top:355px;}
+    .sbtxt1 {opacity:1; left:25px; color:#3b1f16;}
+    /* ===== 버튼 ===== */
+    .cs {position:absolute; top:430px;}
+    .cs li {
+        width:140px; height:60px;
+        border-left:1px solid #7f7370;
+        border-top:1px solid #7f7370;
+        border-bottom:1px solid #7f7370;
+    }
+    .cs li:last-child {border-right:1px solid #7f7370;}
+    /* ===== 버튼 호버 ===== */
+    .cs li a:first-child:hover {color:#F2F2F2;}
+    .btncolor2:hover {color:#F2F2F2;}
+    /* ===== 버튼 효과 ===== */
+    @keyframes btnAction {
+        0% {left:-180px;}
+        85% {left:40%;}
+        100% {left:-10%;}
+    }
+}
+    /* ===== TB 영역 ===== */
+@media screen and (min-width:768px) and (max-width:1049px) {
+    /* ===== tb/sm 영역 위쪽 배경 ===== */
+    .tb-sm-bg {
+        height:50%; background:url(../imgs/tb4-main-bg1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /* ===== 안전 영역 ===== */     
+    .mc4 .cs-container{width:700px; height:824px;}   
+    /*===== 안쓰이는 fhd/hd 용 =====*/
+    .cs-leftbx, .cs-mnbg, .cs-mntitle, .cs-tb-smtitle, 
+    .cs-tb-smtitle2, .cs-mntxt2, .cs-sbtxt, .sbtxt1 {display:none;}
+    .tb-sm-bg2 {
+        background:url(../imgs/tb4-main-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .tb-sm-bg3 {
+        background:url(../imgs/tb4-main-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /*===== 아래쪽 박스 =====*/
+    .cs-mnbx {left:0; top:50%; width:100%; height:50%;}
+    .cs-hdtitle, .cs-hdtitle2, .cs-mntxt {display:block; text-align:center;}
+    .cs-hdtitle {margin-top:20px;}
+    .cs-hdtitle2 {margin-top:-10px;}
+    .cs-title {
+        background:url(../imgs/animated-text-fill.png) repeat-y;
+        -webkit-background-clip:text;
+        background-clip:text;
+    }
+    /* ===== 서브 이미지 ===== */
+    .cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3 {
+        left:50%; top:180px; margin-left:-235px;
+        width:470px; height:80px; 
+    }
+    .cs-sbbg, .cs-sbbg-bg1 {
+        background:url(../imgs/tb4-sub-bg1.jpg) no-repeat center center; 
+        background-size:cover;
+    }
+    .cs-sbbg-bg2 {
+        background:url(../imgs/tb4-sub-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg3 {
+        background:url(../imgs/tb4-sub-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /* ===== 버튼 ===== */
+    .cs {position:absolute; left:50%; bottom:60px; margin-left:-232px;}
+    .cs li {
+        width:155px; height:60px;
+        border-left:1px solid #7f7370;
+        border-top:1px solid #7f7370;
+        border-bottom:1px solid #7f7370;
+    }
+    .cs li:last-child {border-right:1px solid #7f7370;}
+    /* ===== 버튼 효과 ===== */
+    @keyframes btnAction {
+        0% {left:-200px;}
+        85% {left:40%;}
+        100% {left:-10%;}
+    }
+}
+
+    /* ===== SM ===== */
+    
+@media screen and (max-width:767px) {
+    .tb-sm-bg {
+        position:absolute; left:0; top:0;
+        width:100%; height:50%;
+        background:url(../imgs/sm4-main-bg1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .tb-sm-bg2 {
+        background:url(../imgs/sm4-main-bg2.jpg) no-repeat center center; 
+        background-size: cover;
+    }
+    .tb-sm-bg3 {
+        background:url(../imgs/sm4-main-bg3.jpg) no-repeat center center; 
+        background-size: cover;
+    }
+    /* ===== 안전 영역 ===== */     
+    .mc4 .cs-container{width:350px; height:700px;}   
+    .cs-leftbx, .cs-mnbg {display:none;}
+    /*===== 아래쪽 박스 =====*/
+    .cs-mnbx {left:0; top:50%; width:100%; height:50%;}
+    /* ===== 타이틀 ===== */
+    .cs-mntitle, .cs-hdtitle, .cs-hdtitle2, .cs-mntxt, .cs-sbtxt, .sbtxt1 {display:none;}
+    .cs-tb-smtitle, .cs-tb-smtitle2, .cs-mntxt2 {display:block; text-align:center;}
+    .cs-tb-smtitle {margin-top:147px;}
+    .cs-tb-smtitle2 {margin-top:-10px;}
+    .cs-mntxt2 {margin-top:0;}
+    /* ===== 제목 애니메이션 효과 ===== */
+    .cs-title {
+        background:url(../imgs/sm-animated-text-fill.png) repeat-y;
+        -webkit-background-clip:text;
+        background-clip:text;
+    }
+    /* ===== 서브 이미지 ===== */
+    .cs-sbbg, .cs-sbbg-bg1, .cs-sbbg-bg2, .cs-sbbg-bg3 {
+        left:50%; top:30px; margin-left:-175px;
+        width:350px; height:80px;
+    }
+    .cs-sbbg {
+        background:url(../imgs/sm4-sub-bg1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg1 {
+        background:url(../imgs/sm4-sub-bg1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg2 {
+        background:url(../imgs/sm4-sub-bg2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .cs-sbbg-bg3 {
+        background:url(../imgs/sm4-sub-bg3.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    /* ===== 버튼 ===== */
+    .cs li {position:absolute; left:50%; margin-left:-77.5px;}
+    .cs li:first-child{bottom:153px;}
+    .cs li:nth-child(2){bottom:88px;}
+    .cs li:last-child{bottom:23px;}
+    .cs li {width:155px; height:55px; border:1px solid #7f7370;}
+    @keyframes btnAction {
+        0% {left:-200px;}
+        85% {left:40%;}
+        100% {left:-10%;}
+    }
+}

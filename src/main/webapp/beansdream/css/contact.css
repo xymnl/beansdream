@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.ct-mainbg {
+	display:flex; justify-content:center; align-items:center; width:100%; height:100%; 
+	background:url(../imgs/ct-bg.jpg) no-repeat center; background-size:cover;
+}
+
+.ct-title {text-align:center;}
+.ct-title h2 {font-size:54px; text-transform:uppercase;}
+.ct-title p {margin-top:-10px;}
+.ct-box {display:flex; justify-content:center; align-items:center; text-align:center;}
+.ctbt {font-size:28px; font-family:sebangb; font-weight:200;}
+
+@media screen and (min-width:1400px) {
+  .ct-container {width:1300px; height:75%;}
+  .subTitle > h3 {margin:0; padding-top:8%; text-align:center;}
+  .ct-box {margin-top:4%;}  
+  .ct-box .btn {width:30%; height:70px; margin:0 25px;}
+  .ct-guide {width:44%; height:25%; margin:0 3%; background:#E8E8E8; border-radius:10px;}
+  .ct-guide h5 {padding-top:4%; font-size:24px;}
+  .cont {width:80%; margin:4% auto;}
+}
+
+@media screen and (min-width:1050px) and (max-width:1399px) {
+  .ct-container{width:65%; height:75%;}
+  .subTitle > h3 {margin:0; padding:8% 0; text-align:center;}
+  .ct-box {margin-top:4%;}  
+  .ct-box .btn {width:30%; height:70px; margin:0 25px;}
+  .ct-guide {width:44%; height:50%; margin:0 3%; background:#E8E8E8; border-radius:10px;}
+  .ct-guide h5 {padding-top:4%; font-size:24px;}
+  .cont {width:80%; margin:4% auto;}
+ } 
+
+@media screen and (min-width:768px) and (max-width:1049px) {
+  .ct-container{width:66%; height:65%;}  
+  .subTitle > h3 {margin:0; padding:8% 0; text-align:center;}
+  .ct-guide {width:44%; height:50%; margin:0 3%; background:#E8E8E8; border-radius:10px;}
+  .ct-guide h5 {padding-top:4%; font-size:14px;}
+}
+
+@media screen and (max-width:767px) {
+  .ct-container{width:45%; height:65%;}
+  .ct-title  h2{font-size:34px;}
+  .ct-title  p{font-size:11px; margin-top:5px;}
+  .subTitle > h3 {margin:0; padding:25% 0 8%; font-size:16px; text-align:center;}
+  .ct-box .ct-btn {width:50px; height:50px; font-size:0.1em;}
+  .ct-box .ct-btn span {display:none;}
+  .ct-guide {width:44%; height:50%; margin:0 3%; background:#E9E9E9; border-radius:10px;}
+  .ct-guide h5 {padding-top:4%; font-size:12px;}
+  .ct-guide p {font-size:10px;}
+  .cont {width:80%; height:50%; margin:4% auto;}
+}
+

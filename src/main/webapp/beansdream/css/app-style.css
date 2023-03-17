@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {overflow:auto;}
+
+/*=== common ===*/
+.back {width:50px; height:50px; margin-left:80px; color:#F2F2F2; background:#FF8000;}
+
+/* 페이지 타이틀 문구 */
+
+
+
+/*=== appList.jsp ===*/
+.ap-container {display:flex; justify-content:center; align-items:center; width:100%;}
+
+.list-none {width:1300px; height:300px; margin:50px auto; text-align:center; line-height:300px;}
+
+.listTitle {background:black; color:white; padding:150px 0 50px 60px;}
+.app-table .subject {font-weight:bold; text-align:center;}
+.app-table .subject li{background:#e4e4e4; border-left:none; border-right:none;}
+.app-table ul {clear:left; margin:0; padding:0; list-style:none;}
+.app-table ul li {width:150px; height:50px; text-align:center; line-height:50px; float:left; margin:0; border-bottom:1px solid #e4e4e4;;}
+.app-table ul li .userD {width:300px;}
+.ap-container .userDbtn {width:80px; height:40px; border-radius:20px; line-height:36px;}
+
+.search-box {display:flex; justify-content:center; padding:10px;}
+.search-box > .input-box {margin-bottom:20px; background:#e4e4e4;}
+.appbt {width:30px; height:30px; border-radius:20px; background:black; color:white; line-height:20px;}
+.appBack {color:#f2f2f2; background:black;}
+
+/*=== appOff.jsp / appOn.jsp ===*/
+.app-title {
+  padding:70px; text-align:center; color:#333;
+}
+.app-title h2 {font-size:54px; text-transform:uppsercase; transition:all 0.6s ease;}
+
+.tbl-elm input{margin-left:40px;}
+.tbl-elm input:nth-child(1), .tbl-elm input:nth-child(6), .tbl-elm input:nth-child(11){margin-left:0px;}
+
+.insert-block {
+  width:1024px; margin:0 auto;
+}
+.insert-block h3 {border-bottom:solid 2px #242424; padding-bottom:30px; margin-bottom:40px;}
+	
+.apptbl { /* 바리스타 과정 신청 테이블 */
+  width:1024px; height:300px;
+  margin:0 auto 5%;
+}
+.tbl-title {width:250px;}
+.apptbl tr {height:100px;}
+
+.input-date, .input-text {width:50%; background:#e4e4e4;}
+
+.agree-block {
+  width:1024px; margin:0 auto;
+}
+.agree-block h3 {border-bottom:solid 2px #242424; padding-bottom:30px; margin-bottom:40px;}
+.agree-block a {float:right;}
+
+input[type="checkbox"] {
+  width: 15px; height: 15px;
+  border-radius: 50%; border: 1px solid #999;
+  appearance: none; cursor: pointer;
+  transition: background 0.2s;
+}
+input[type="checkbox"]:checked {background: #ff8000; border: none;}
+.bold {font-weight:bold;}
+
+.agreebox { margin:10px auto;  padding:50px;  border:1px solid #333;}
+
+.btn {width:230px; text-align:center;}
+.btn:hover {background:#FF8000; border:1px solid #FF8000;}
+.apponoff {padding:50px 0 10px;}
+.movePage {display:flex; justify-content:space-around; margin:0 auto; width:400px; padding:0 0 30px;}

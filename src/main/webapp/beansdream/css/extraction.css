@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*포지션 및 배경 스타일 시트*/
+    /*포지션 앱솔루트 */
+.ec-bg1, .ec-bg1box, .ec-bg2box, .ec-bg3box, .ec-bg4box, .ec-container, .ec-txtbox,.ec-main-txt,  .ec-sub-txt, .ec-mainbox, .ec-mainbox li, .ec-subbox, .ec-subbox li, .ec-mainbox li::before
+    {position:absolute;}
+    /*배경 이미지 공통 스타일 시트*/
+.ec-bg1box, .ec-bg1box.ecatv1, .ec-bg1box.ecatv2, .ec-bg1box.ecatv3 {left:0; top:0; width:100%; height:100%; transition:all 0.6s ease 0.2s;}
+    /*.mainbg1 공통 시트 = .ec-bg1*/
+.ec-bg1{width:20%; height:20%; border:1px solid rgba(255, 255, 255, 0.08);}
+.ec-bg1.ecatv {background:rgba(0, 0, 0, 0.01); border:1px solid rgba(255, 255, 255, 0.03);}
+.mainbg1-1 {left:0;top:0; background:rgba(0, 0, 0, 0.2); background-size:cover; transition:all 0.1s ease 0.4s;}
+.mainbg1-2 {left:20%;top:0; background:rgba(0, 0, 0, 0.4); background-size:cover; transition:all 0.3s ease 0.5s;}
+.mainbg1-3 {left:40%;top:0; background:rgba(0, 0, 0, 0.6); background-size:cover; transition:all 0.5s ease 0.6s;}
+.mainbg1-4 {left:60%;top:0; background:rgba(0, 0, 0, 0.7); background-size:cover; transition:all 0.7s ease 0.7s;}
+.mainbg1-5 {left:80%;top:0; background:rgba(0, 0, 0, 0.8); background-size:cover; transition:all 0.9s ease 0.8s;}
+.mainbg1-6 {left:0;top:20%; background:rgba(0, 0, 0, 0.2); background-size:cover; transition:all 0.1s ease 0.4s;}
+.mainbg1-7 {left:20%;top:20%; background:rgba(0, 0, 0, 0.4); background-size:cover; transition:all 0.3s ease 0.5s;}
+.mainbg1-8 {left:40%;top:20%; background:rgba(0, 0, 0, 0.6); background-size:cover; transition:all 0.5s ease 0.6s;}
+.mainbg1-9 {left:60%;top:20%; background:rgba(0, 0, 0, 0.7); background-size:cover; transition:all 0.7s ease 0.7s;}
+.mainbg1-10 {left:80%;top:20%; background:rgba(0, 0, 0, 0.8); background-size:cover; transition:all 0.9s ease 0.8s;}
+.mainbg1-11 {left:0;top:40%; background:rgba(0, 0, 0, 0.2); background-size:cover; transition:all 0.1s ease 0.4s;}
+.mainbg1-12 {left:20%;top:40%; background:rgba(0, 0, 0, 0.4); background-size:cover; transition:all 0.3s ease 0.5s;}
+.mainbg1-13 {left:40%;top:40%; background:rgba(0, 0, 0, 0.6); background-size:cover; transition:all 0.5s ease 0.6s;}
+.mainbg1-14 {left:60%;top:40%; background:rgba(0, 0, 0, 0.7); background-size:cover; transition:all 0.7s ease 0.7s;}
+.mainbg1-15 {left:80%;top:40%; background:rgba(0, 0, 0, 0.8); background-size:cover; transition:all 0.9s ease 0.8s;}
+.mainbg1-16 {left:0;top:60%; background:rgba(0, 0, 0, 0.2); background-size:cover; transition:all 0.1s ease 0.4s;}
+.mainbg1-17 {left:20%;top:60%; background:rgba(0, 0, 0, 0.4); background-size:cover; transition:all 0.3s ease 0.5s;}
+.mainbg1-18 {left:40%;top:60%; background:rgba(0, 0, 0, 0.6); background-size:cover; transition:all 0.5s ease 0.6s;}
+.mainbg1-19 {left:60%;top:60%; background:rgba(0, 0, 0, 0.7); background-size:cover; transition:all 0.7s ease 0.7s;}
+.mainbg1-20 {left:80%;top:60%; background:rgba(0, 0, 0, 0.8); background-size:cover; transition:all 0.9s ease 0.8s;}
+.mainbg1-21 {left:0;top:80%; background:rgba(0, 0, 0, 0.2); background-size:cover; transition:all 0.1s ease 0.4s;}
+.mainbg1-22 {left:20%;top:80%; background:rgba(0, 0, 0, 0.4); background-size:cover; transition:all 0.3s ease 0.5s;}
+.mainbg1-23 {left:40%;top:80%; background:rgba(0, 0, 0, 0.6); background-size:cover; transition:all 0.5s ease 0.6s;}
+.mainbg1-24 {left:60%;top:80%; background:rgba(0, 0, 0, 0.7); background-size:cover; transition:all 0.7s ease 0.7s;}
+.mainbg1-25 {left:80%;top:80%; background:rgba(0, 0, 0, 0.8); background-size:cover; transition:all 0.9s ease 0.8s;}
+
+/*컨텐츠 미디어쿼리 공통 스타일시트*/
+    /*섹션 전체 페이지*/
+.ec-mainbg { position:relative; left:0; width:100%; height:100%;}
+    /*섹션 안전영역*/
+    
+.ec-container { left:50%; top:50%; transform:translate(-50%, -50%); }
+    /*메인,서브 텍스트*/
+.ec-main-txt,  .ec-sub-txt {color:#F2F2F2;}
+.ec-main-txt { font-size:54px; text-transform:uppercase; transition: all 0.6s ease 0.7s; }
+.ec-sub-txt { transition: all 0.6s ease 0.6s; }
+    /*추출방법 종류 박스*/
+.ec-mainbox { transition: all 0.8s ease 0.9s; }
+.ec-mainbox li { 
+    text-align:center; border:1px solid rgba(255, 255, 255, 0.3);
+    background:#37190e6c; transition:all 0.4s ease; overflow:hidden; 
+}
+    /*=====추출 방법 종류 박스 : 애니메이션 효과 ( 오퍼시티 박스 하버 효과 )=====*/
+.ec-mainbox li::before { content:""; left:-150px; top:150%; width:120%; height:260%; transform:rotate(30deg); }
+    /*=====JS=====*/
+.boxbg {background:#FF8000;}
+
+    /*메인박스 추출방법 종류 박스 애니메이션 박스 공통 시트*/
+.ec-mainbox li:first-child::before, .ec-mainbox li:nth-child(2)::before, .ec-mainbox li:last-child::before
+{ background:#FF8000; opacity:0.5;}
+.ec-mainbox li:hover::before { left:-20px; top:-40px; animation:btnAction 0.7s 1; }
+@keyframes btnAction { /* 추출방법 하버 애니메이션*/
+    0% {left:-80px; top:90%;}
+    70% {left:70px; top:-30%;}
+    100% {left:-20px; top:-40px;}
+}
+    /*추출방법 설명 박스*/
+.ec-subbox { transition: all 0.8s ease 0.9s; }
+.ec-subbox li {
+    left:0;top:23%; width:100%; height:100%;
+    color:#F2F2F2; text-align:center; line-height:28px; transition:all 1s ease;
+}
+.ec-txt {opacity:0;}
+.ec-txt.ecatv {opacity:1;}
+
+@media screen and (min-width:1400px) {    
+
+    /*=====안전영역 박스=====*/
+    .ec-container {width:1300px; height:76%;}
+    /*=====메인 배경=====*/
+    .ec-bg1box {background:url(../imgs/fhd-ec-bg1.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv1 {background:url(../imgs/fhd-ec-bg2.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv2 {background:url(../imgs/fhd-ec-bg3.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv3 {background:url(../imgs/fhd-ec-bg4.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+
+        /*메인,서브 텍스트 부모박스*/
+    /*=====타이틀 문구=====*/
+    .ec-main-txt,  .ec-sub-txt { left:70px;}
+    .ec-main-txt { top:280px; } /* top:280px;*/
+    .ec-sub-txt { top:340px; width:294px; }/*top:340px;*/
+
+    .ec-mainbox { left:0px; top:416px; }
+    /*추출방법 종류 전체박스 // 에스프레소*/
+    .ec-mainbox li { left:0; top:0; width:155px;height:60px; line-height:58px; }
+    /*콜드브루*/
+    .ec-mainbox li:nth-child(2) {left:155px;}
+    /*프렌치 프레스*/
+    .ec-mainbox li:last-child {left:310px;}
+
+    /*=====추출 방법 설명 박스=====*/
+    .ec-subbox {  /*right:30px*/
+        left:800px;top:330px; width:465px; height:150px;
+        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+    }
+}
+
+@media screen and (min-width:1050px) and (max-width:1399px) {
+
+    /* 전체화면 */
+
+     /*=====안전영역 박스=====*/
+     .ec-container {width:900px; height:75%;}
+   
+    /*=====메인 배경=====*/
+    .ec-bg1box {background:url(../imgs/fhd-ec-bg1.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv1 {background:url(../imgs/fhd-ec-bg2.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv2 {background:url(../imgs/fhd-ec-bg3.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv3 {background:url(../imgs/fhd-ec-bg4.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+ 
+    /*메인,서브 텍스트 부모박스*/
+    .ec-main-txt,  .ec-sub-txt {left:45px; }
+    .ec-main-txt { top:280px; font-size:54px; } /* top:280px;*/
+    .ec-sub-txt { top:340px; width:300px; }/*top:340px;*/
+
+
+    .ec-mainbox {left:0px; top:416px; }
+
+    /*에스프레소*/
+    .ec-mainbox li {
+        left:0; top:0; width:140px;height:60px; line-height:58px;
+        border:1px solid rgba(255, 255, 255, 0.2);
+    }
+    /*콜드브루*/
+    .ec-mainbox li:nth-child(2) {left:140px;}
+    /*프렌치 프레스*/
+    .ec-mainbox li:last-child {left:280px;}
+
+    /*=====추출 방법 설명 박스=====*/
+    .ec-subbox {  /*right:30px*/
+        left:520px;top:330px; width:380px; height:150px;
+        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1049px) {
+   
+    /* 전체화면 */
+     /*=====안전영역 박스=====*/
+     .ec-container { width:700px; height:500px;}
+
+    /*=====메인 배경=====*/
+    .ec-bg1box {background:url(../imgs/tbl-ec-bg1.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv1 {background:url(../imgs/tbl-ec-bg2.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv2 {background:url(../imgs/tbl-ec-bg3.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv3 {background:url(../imgs/tbl-ec-bg4.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+
+    .ec-main-txt { top:85px; left:184px; }
+    .ec-sub-txt { top:145px; left:204px; width:292px; }
+
+    .ec-mainbox { left:117.5px; top:225px; }
+    /*에스프레소*/
+    .ec-mainbox li {
+        left:0; top:0; width:155px;height:60px; line-height:58px;
+        border:1px solid rgba(255, 255, 255, 0.2);
+    }
+    /*콜드브루*/
+    .ec-mainbox li:nth-child(2) {left:155px;}
+    /*프렌치 프레스*/
+    .ec-mainbox li:last-child {left:310px;}
+    
+    .ec-mainbox li::before {display:none;}/*모바일영역 hover 미스로 hover 효과 제거*/
+    /*=====추출 방법 설명 박스=====*/
+    .ec-subbox {  /*right:30px*/
+        left:138px; top:350px; width:424px; height:150px; 
+        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+    }
+}
+
+@media screen and (max-width:767px) {
+   
+    /* 전체화면 */
+     /*=====안전영역 박스=====*/
+     .ec-container { width:350px; height:500px; }
+     /*=====메인 배경=====*/
+    .ec-bg1box {background:url(../imgs/sm-ec-bg1.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv1 {background:url(../imgs/sm-ec-bg2.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv2 {background:url(../imgs/sm-ec-bg3.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+    .ec-bg1box.ecatv3 {background:url(../imgs/sm-ec-bg4.jpg) no-repeat center center; background-size:cover;} /* 배경 박스들 (25개) 뒤에 안전배경 */
+
+    .ec-main-txt { left:9px; top:100px; }
+    .ec-sub-txt { left:29px; top:160px; width:292px; }
+
+    .ec-mainbox { left:0px; top:225px; }
+    /*에스프레소*/
+    .ec-mainbox li { left:0; top:0; width:116.6px; height:60px; line-height:58px; }
+    /*콜드브루*/
+    .ec-mainbox li:nth-child(2) {left:116.6px;}
+    /*프렌치 프레스*/
+    .ec-mainbox li:last-child {left:233.2px;}
+    
+    .ec-mainbox li::before {display:none;}/*모바일영역 hover 미스로 hover 효과 제거*/
+    /*=====추출 방법 설명 박스=====*/
+    .ec-subbox {  /*right:30px*/
+        left:15px; top:335px; width:320px; height:150px;
+        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+    }
+}

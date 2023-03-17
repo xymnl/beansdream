@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* 배경 비디오 */
+#video {position:absolute; top:0; left:0; object-fit:cover; width:100%; height:100vh; z-index:-1;}
+
+.m-box {position:absolute;  top:0; left:0; width:100%; height:100vh; overflow:hidden;}
+.m-box1 {width:100%; height:100vh; background:rgba(255,255,255,0.2);}
+
+.container{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
+.m-t1, .m-t2, .m-t3 {
+  padding:3% 10%;
+  color:#FFF; font-size:60px; font-family:sebangb; 
+  text-transform:uppercase; letter-spacing:0.5em;
+}
+.m-t1 .letter, .m-t2 .letter, .m-t3 .letter {display:inline-block; opacity:0;}
+.m-t2 {font-size:100px; color:#FF8000; font-weight:bold;}
+
+.m-scroll-1, .m-scroll-2, .m-scroll-txt {
+  color:#FFF; text-align:center; text-transform:uppercase; 
+  font-size:26px; font-family:sebangb;
+}
+.m-scroll-1, .m-scroll-2 {animation:scroll 1s ease infinite alternate;}
+.m-scroll-2 {margin-top:-20px;}	
+.m-scroll-txt {transform:translateY(10px);}
+
+@keyframes scroll {
+	0% {transform:translateY(0);}
+	50% {transform:translateY(5px);}
+	100% {transform:translateY(0);}
+}
+
+/* ===== FHD ===== */
+@media screen and (min-width:1400px) {
+  /* === 화면 덮는 레이어 === */
+  .m-box2 {
+    width:100%; height:100vh; 
+    background:rgba(0,0,0,0.45); 
+    transform:translate(-300%) rotate(45deg) scale(1.5); transition:all 1s ease 0.5s;
+  	}
+  .m-box3 {display:none;}
+  .m-box4 {display:none;}
+  
+  /* body 마우스 오버 시 layer 이동 */    
+  #section0:hover .m-box2{transform:translate(-15%,-500px) rotate(45deg) scale(1.5); transition:all 0.8s ease;}
+  .m-box4:hover {transform:scale(1.2);}
+
+  .container {width:92%; height:76%;}
+
+  /* === 스크롤 안내 === */
+  .m-scroll {position:absolute; left:50%; bottom:10px; transform:translate(-50%,-10px);}
+}
+
+/* ===== HD ===== */
+@media screen and (min-width:1050px) and (max-width:1399px) {  
+	.m-box2, .m-box3 {position:absolute;}
+	.m-box2, .m-box3 {left:20px; top:-320px; width:1300px; height:1300px; transition:all 1s ease 0.5s;}
+	.m-box2 {
+		background:rgba(0, 0, 0, 0.45); 
+		transform:translate(-500%,100px) rotate(45deg);
+	}
+	.m-box3 {
+		background:rgba(255, 128, 0 , 0.2); 
+		transform:translate(800%, 100px) rotate(-45deg);
+	}
+  
+	#section0:hover .m-box2{transform:translate(-40%,100px) rotate(45deg);}
+	#section0:hover .m-box3{transform:translate(40%,100px) rotate(-45deg); transition:all 0.8s ease 0.5s;}
+
+	.container{width:65%; height:75%;}
+	.m-t1,.m-t2, .m-t3 {padding:7% 0; font-size:50px; }
+	.m-t2 {font-size:90px;}
+ 
+	.m-scroll {position:absolute; left:50%; bottom:10px; transform:translate(-50%,-10px);}
+	.m-scroll-1, .m-scroll-2, .m-scroll-txt {font-size:21px; color:rgb(181, 66, 4);}
+}
+
+/* ===== TBL ===== */
+@media screen and (min-width:768px) and (max-width:1049px) {
+	.m-box2, .m-box3, .m-box4, .m-box5 {position:absolute; width:300px; height:300px;}
+	.m-box2 {left:50%; top:-50%; border-radius:200px 10px; background: rgba(181, 66, 4,0.6); animation:m-box1 1s ease infinite alternate; transition:all 0.4s ease 0.2s;}
+	.m-box3 {left:15%; top:-50%; border-radius:10px 200px; background:rgba(181, 66, 4,0.7); animation:m-box2 1s ease infinite alternate; transition:all 0.6s ease 0.4s;}
+	.m-box4 {left:50%; top:-50%; border-radius:200px 10px; background: rgba(181, 66, 4,0.8); animation:m-box1 1s ease infinite alternate; transition:all 0.8s ease 0.6s;}
+	.m-box5 {left:30%; top:-50%; border-radius:10px 200px; background: rgba(181, 66, 4,0.9); animation:m-box2 1s ease infinite alternate; transition:all 1s ease 0.8s;}
+
+	#section0:hover .m-box2 {top:-5%;}
+	#section0:hover .m-box3 {top:20%;}
+	#section0:hover .m-box4 {top:45%;}
+	#section0:hover .m-box5 {top:80%;}
+
+	@keyframes m-box1 {0% {transform:rotate(0);}	100% {transform:rotate(20deg);}}
+	@keyframes m-box2 {0% {transform:rotate(0);} 100% {transform:rotate(-20deg);}}
+
+	.container{width:66%; height:75%;}
+	.m-t1,.m-t2, .m-t3 {padding:10% 0; font-size:50px; text-align:center;}
+	.m-t2 {font-size:70px;}
+
+	.m-scroll {position:absolute; left:50%; bottom:10px; transform:translate(-50%,-10px);}
+	.m-scroll-1, .m-scroll-2, .m-scroll-txt {font-size:21px; color:#A9A9A9;}
+}
+
+/* ===== SM ===== */
+@media screen and (max-width:767px) {
+	.m-box1 {width:100%; height:100vh; background:rgba(0,0,0,0.25);}
+	.m-box2, .m-box3, .m-box4, .m-box5 {position:absolute; width:200px; height:200px;}
+	.m-box2 {left:50%; top:-50%; border-radius:120px 5px; background: rgba(181, 66, 4,0.6); animation:m-box1 1s ease infinite alternate; transition:all 0.4s ease 0.2s;}
+	.m-box3 {left:15%; top:-50%; border-radius:5px 120px; background:rgba(181, 66, 4,0.7); animation:m-box2 1s ease infinite alternate; transition:all 0.6s ease 0.4s;}
+	.m-box4 {left:50%; top:-50%; border-radius:120px 5px; background: rgba(181, 66, 4,0.8); animation:m-box1 1s ease infinite alternate; transition:all 0.8s ease 0.6s;}
+	.m-box5 {left:30%; top:-50%; border-radius:5px 120px; background: rgba(181, 66, 4,0.9); animation:m-box2 1s ease infinite alternate; transition:all 1s ease 0.8s;}
+  
+	#section0:hover .m-box2 {top:-5%;}
+	#section0:hover .m-box3 {top:20%;}
+	#section0:hover .m-box4 {top:45%;}
+	#section0:hover .m-box5 {top:80%;}
+
+	@keyframes m-box1 {0% {transform:rotate(0);}100% {transform:rotate(20deg);}}
+	@keyframes m-box2 {0% {transform:rotate(0);}100% {transform:rotate(-20deg);}}
+
+	.container{width:45%; height:80%;}
+	.m-t1,.m-t2, .m-t3 {padding:20% 0; font-size:18px; text-align:center;}
+	.m-t1 {margin-top:20%;}
+	.m-t2 {font-size:30px;}
+
+	.m-scroll {position:absolute; left:50%; bottom:10px; transform:translate(-50%,-10px);}
+	.m-scroll-1, .m-scroll-2, .m-scroll-txt {font-size:18px;}	
+	.m-scroll-2 {margin-top:-25px;}	
+}

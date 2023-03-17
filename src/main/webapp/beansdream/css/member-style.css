@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+
+/*===== Reset =====*/
+body{overflow:auto;}
+.sub-bn {height:300px;}
+h4 {margin:0 auto; padding-top:150px; font-size:54px; text-align:center; color:white;}
+.mb-container, .poll-container {padding:50px 0;}
+.mb-container li {float:none; padding:5px 0;}
+.clear {clear:both;}
+.flex {display:flex; justify-content:center; align-items:center; padding:100px 0;}
+.search-box {margin:10px;}  
+
+.rs-container {padding:60px 0 0 60px;}
+.rs-table {margin:50px auto; width:1500px;}
+.rs-table ul {clear:left; margin:0; padding:0; list-style:none;}
+.rs-table ul li {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.rs-table .subject {font-weight:bold; text-align:center;}
+.rs-table .subject li{background:rgba(135, 206, 235, 0.4); border-left:none; border-right:none;}
+.rs-table ul li {width:180px; height:50px; text-align:center; line-height:50px; float:left; margin:0; border-bottom:1px solid rgb(135, 206, 235);}
+
+/*===== Member Join =====*/
+.sub-bn-bg-2 {background:#000;}
+.join-container {padding:30px;}
+.join-container li {width:550px;  margin:0 auto; padding:10px;}
+.join-container .li-flex {display:flex; justify-content:space-between; align-items:center;}
+.join-container .form-control {width:100%;}
+.join-container .input-id, .join-container .input-zipcode {width:40%;}
+.join-container .input-birth {float:right; width:90%;}
+.join-container .li-zipcode {margin-top:10px;}
+.input-button, .btn-zipcode {height:30px; font-size:12px; line-height:20px;}
+
+/*===== Member Login =====*/
+.sub-bn-bg-1 {background:#000; padding-left:60px;}
+.login-container {width:1000px; margin:0 auto; text-align:center;}
+.login-container .input-box {width:285px; margin-bottom:10px;}
+
+
+/*===== Member MyPage =====*/
+.table-mypage {width:500px; margin:0 auto;}
+.table-mypage td:nth-child(1) {width:120px;}
+.sub-bn-bg-3 {background:black;}
+.my-container {margin-left:-60px;}
+.my-table {margin:50px auto; width:900px;}
+.my-table ul {clear:both; margin:0; padding:0; list-style:none;}
+.my-table ul li {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.my-table .subject {font-weight:bold; text-align:center;}
+.mytitle {width:300px;}
+.mySub {width:600px;}
+.my-table ul li {height:50px; text-align:left; line-height:50px; margin:0; border-bottom:1px solid #e4e4e4;}
+.flex .mypagebtn {width:300px;}
+
+
+/* ===== member.jsp ===== */
+.btn.memberbtn {width:300px;}
+
+/*===== admin-memberList.jsp ======*/
+.adList {padding:10px 0 0;}
+.ad-wrap {margin:-30px 0 60px 60px; background:pink;}
+.slide {	float:left;	 margin:60px 1% -30px; padding:30px; border:3px solid #333;	border-radius:20px;}
+.ad-item {width:270px; height:400px;}
+.ad-item h3 {text-align:center; padding-bottom:30px; font-size:28px;}		
+.ad-title, .ad-sub {height:40px; line-height:40px;}		
+.ad-title {float:left; width:100px;}
+.ad-sub {float:right; width:170px;}
+.ad-addr {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.ad-item .adbt {width:100px; height:30px; line-height:30px; border-radius:15px;}
+
+
+/*===== admin-update =====*/
+.up-container {padding-left:60px;}
+.up-table {width:80%; height:500px; margin:50px auto;}
+.up-table ul {clear:left; margin:0; padding:0; list-style:none;}
+.up-table .up-title {font-weight:bold; text-align:left; padding-left:80px;}
+.up-table ul li {
+	display:flex; align-items:center;
+	width:50%; height:125px; border:1px solid #333;
+}
+.up-table ul li > input {margin-left:50px;}
+.adbt {cursor:pointer;}
