@@ -139,7 +139,7 @@
     /*=====추출 방법 설명 박스=====*/
     .ec-subbox {  /*right:30px*/
         left:520px;top:330px; width:380px; height:150px;
-        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+        background: url(../imgs/hd-ec-bd.png)no-repeat left top, url(../imgs/hd-ec-bd.png)no-repeat right bottom;
     }
 
 }
@@ -174,7 +174,7 @@
     /*=====추출 방법 설명 박스=====*/
     .ec-subbox {  /*right:30px*/
         left:138px; top:350px; width:424px; height:150px; 
-        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+        background: url(../imgs/hd-ec-bd.png)no-repeat left top, url(../imgs/hd-ec-bd.png)no-repeat right bottom;
     }
 }
 
@@ -204,6 +204,6 @@
     /*=====추출 방법 설명 박스=====*/
     .ec-subbox {  /*right:30px*/
         left:15px; top:335px; width:320px; height:150px;
-        background: url(../imgs/hd-ec-bd.png) no-repeat left top, url(../imgs/hd-ec-bd.png) no-repeat right bottom;
+        background: url(../imgs/hd-ec-bd.png)no-repeat left top, url(../imgs/hd-ec-bd.png)no-repeat right bottom;
     }
 }
