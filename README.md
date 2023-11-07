@@ -34,10 +34,10 @@
 ## 메인 화면
 
 <p align="center" styel="display:flex; ">
-  <img src="./readImg/fhd.png" alt="fhd" style="width: 50px; height: 50px" />
-  <img src="./readImg/hd.png" alt="fhd" style="width: 50px; height: 50px" />
-  <img src="./readImg/tbl.png" alt="fhd" style="width: 50px; height: 50px" />
-  <img src="./readImg/sm.png" alt="fhd" style="width: 50px; height: 50px" />
+  <img src="./readImg/fhd.png" alt="fhd" style="height:150px" />
+  <img src="./readImg/hd.png" alt="fhd" style="height:150px" />
+  <img src="./readImg/tbl.png" alt="fhd" style="height:150px" />
+  <img src="./readImg/sm.png" alt="fhd" style="height:150px" />
 </p>
 
 - 미디어쿼리에 따른 반응형 웹 구현.
@@ -57,8 +57,8 @@
 ## 회원 관리
 
 <p align="center" style="display:flex;">
-  <img src="./readImg/myinfo.png" alt="myinfo" />
-  <img src="./readImg/list.png" alt="list" />
+  <img src="./readImg/myinfo.png" alt="myinfo" style="height:200px;"/>
+  <img src="./readImg/list.png" alt="list" style="height:200px;"/>
 </p>
 
 - 마이페이지 사용자 주문/개인정보 수정, 회원탈퇴 기능
